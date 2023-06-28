@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function startGame() {
       gameStarted = true;
       score = 0;
-      scoreElement.textContent = 'Счет: ' + score;
+      scoreElement.textContent = 'Рахунок: ' + score;
   
       gameTimer = setInterval(addButterfly, 1000);
       field.addEventListener('click', catchButterfly);
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (event.target.classList.contains('butterfly')) {
         event.target.parentNode.removeChild(event.target);
         score++;
-        scoreElement.textContent = 'Счет: ' + score;
+        scoreElement.textContent = 'Рахунок: ' + score;
       }
     }
   
